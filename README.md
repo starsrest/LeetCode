@@ -1,2 +1,2 @@
-# leetcode_screenshot
-This is repo for updating screenshot of daily leetcode problem solution.
+# leetcode
+This is repo for stroing daily leetcode problem solution.
