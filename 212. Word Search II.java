@@ -36,7 +36,6 @@ class Solution {
     return res;
   }
   
-  
   private void backtrack(int r, int c, Node parent) {
     if (r < 0 || r >= m || c < 0 || c >= n || board[r][c] == '*' 
         || parent.children[board[r][c] - 'a'] == null) return;
