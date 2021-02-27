@@ -37,7 +37,8 @@ class MagicDictionary {
     
     for (int i = 0; i < 26; i++) { // backtrack  
       // if current char doesn't change, count stay the same. otherwise count + 1
-      if (search(word, curr.children[i], index + 1, word.charAt(index) - 'a' != i ? count + 1 : count)) return true; // found
+      int newCount = word.charAt(index) - 'a' != i ? count + 1 : count;
+      if (search(word, curr.children[i], index + 1, newCount)) return true; // found
     }
     return false; // not found
   }
