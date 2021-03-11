@@ -1,7 +1,7 @@
 class Solution {
   public boolean canAttendMeetings(int[][] intervals) {
     // time O(nlogn)
-    // space O(1)
+    // space O(n) auxiliary
     Arrays.sort(intervals, (i1, i2) -> i1[0] - i2[0]);
     
     for (int i = 0; i < intervals.length - 1; i++) {
